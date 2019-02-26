@@ -31,7 +31,7 @@ class HomePageCarousel extends Component {
       >
         <Carousel.Item>
           <img
-            className="d-block w-100"
+            className="d-block w-50 m-auto"
             src="/images/plums.jpg"
             alt="First slide"
           />
@@ -42,9 +42,9 @@ class HomePageCarousel extends Component {
         </Carousel.Item>
         <Carousel.Item>
           <img
-            className="d-block w-100"
+            className="d-block w-50 m-auto"
             src="/images/plums.jpg"
-            alt="Third slide"
+            alt="First slide"
           />
 
           <Carousel.Caption>
