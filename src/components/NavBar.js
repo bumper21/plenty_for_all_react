@@ -8,7 +8,7 @@ const NavBar = props => {
   return (
     <Container>
       <>
-      <Navbar collapseOnSelect expand="lg" bg="white" variant="light" className="justify-content-center pt-4 pb-4">
+      <Navbar collapseOnSelect expand="lg" bg="white" className="justify-content-center pt-4 pb-4">
         <Navbar.Brand href="#HomePage">
           <Image
             src="/images/plums.jpg"
@@ -22,11 +22,11 @@ const NavBar = props => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav>
-            <Nav.Link href="">Blog</Nav.Link>
-            <Nav.Link href="">Events</Nav.Link>
-            <Nav.Link href="">Resources</Nav.Link>
-            <Nav.Link href="">Contact</Nav.Link>
-            <Nav.Link href="">Bio</Nav.Link>
+            <Nav.Link className="text-dark" href="">Blog</Nav.Link>
+            <Nav.Link className="text-dark" href="">Events</Nav.Link>
+            <Nav.Link className="text-dark" href="">Resources</Nav.Link>
+            <Nav.Link className="text-dark" href="">Contact</Nav.Link>
+            <Nav.Link className="text-dark" href="">Bio</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
