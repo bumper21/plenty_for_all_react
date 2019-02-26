@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-import HomePage from './HomePage';
+import HomePage from './HomePage/HomePage';
 import NavBar from './NavBar';
 
 class App extends Component {
