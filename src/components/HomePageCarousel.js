@@ -28,11 +28,12 @@ class HomePageCarousel extends Component {
         activeIndex={index}
         direction={direction}
         onSelect={this.handleSelect}
+        width="100%"
       >
         <Carousel.Item>
           <img
-            className="d-block w-100"
-            src="/images/plums.jpg"
+            className="d-block w-50"
+            src="holder.js/800x400?text=First slide&bg=373940"
             alt="First slide"
           />
           <Carousel.Caption>
