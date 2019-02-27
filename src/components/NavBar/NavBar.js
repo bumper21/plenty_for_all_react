@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navbar, Nav, Image, Container } from 'react-bootstrap';
 import './NavBar.scss'
+import LeafSky from '../../images/leaf-sky.jpg'
 
 const NavBar = props => {
   // const {} = props;
@@ -12,7 +13,7 @@ const NavBar = props => {
         <Navbar collapseOnSelect expand="lg" bg="white" >
           <Navbar.Brand href="#HomePage">
             <Image
-              src="/images/plums.jpg"
+              src={LeafSky}
               width="40"
               height="40"
               roundedCircle="true"
