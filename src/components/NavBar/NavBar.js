@@ -25,6 +25,7 @@ const NavBar = props => {
             <Nav>
               <Nav.Link className="text-dark" href="">Blog</Nav.Link>
               <Nav.Link className="text-dark" href="">Events</Nav.Link>
+              <Nav.Link className="text-dark" href="">Courses</Nav.Link>
               <Nav.Link className="text-dark" href="">Resources</Nav.Link>
               <Nav.Link className="text-dark" href="">Contact</Nav.Link>
               <Nav.Link className="text-dark" href="">Bio</Nav.Link>

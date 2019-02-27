@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import HomePageCarousel from './HomePageCarousel';
 import './HomePage.scss';
 import HomePageJumbotron from './Jumbotron/Jumbotron'
+import HomePageSiteDescription from './SiteDescription/SiteDescription'
 
 
 class HomePage extends Component {
@@ -12,6 +13,7 @@ class HomePage extends Component {
       <div className="HomePage">
         <HomePageJumbotron />
         {/* <HomePageCarousel /> */}
+        <HomePageSiteDescription />
       </div>
 
     </main>
