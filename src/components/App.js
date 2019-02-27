@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import HomePage from './HomePage/HomePage';
-import NavBar from './NavBar';
+import NavBar from './NavBar/NavBar';
 
 class App extends Component {
   constructor(props) {

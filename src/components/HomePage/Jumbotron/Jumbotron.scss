@@ -1,0 +1,25 @@
+.jumbotron {
+  background-image: url(../../../images/seedlings.jpg);
+  background-size: cover;
+  min-height: 50vh;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  display: flex;
+}
+
+.jumbotron .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.jumbotron h1 {
+  font-weight: bold;
+  
+}
+
+.jumbotron p {
+  color: white;
+  font-size: 22px
+}

@@ -1,20 +1,24 @@
-import React from 'react';
-// import {Image} from 'react-bootstrap';
+import React, { Component } from 'react';
+
 import HomePageCarousel from './HomePageCarousel';
 import './HomePage.scss';
+import HomePageJumbotron from './Jumbotron/Jumbotron'
+import HomePageSiteDescription from './SiteDescription/SiteDescription'
 
 
-const HomePage = props => {
-  const {} = props;
+class HomePage extends Component {
+  render() {
+    return (
+    <main>
+      <div className="HomePage">
+        <HomePageJumbotron />
+        {/* <HomePageCarousel /> */}
+        <HomePageSiteDescription />
+      </div>
 
-  return (
-  <main>
-    <div className="HomePage">
-      <HomePageCarousel />
-    </div>
-
-  </main>
-  );
+    </main>
+    );
+  };
 };
 
 export default HomePage;
