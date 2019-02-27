@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-// import HomePageCarousel from './HomePageCarousel';
 import './HomePage.scss';
 import HomePageJumbotron from './Jumbotron/Jumbotron'
 import HomePageSiteDescription from './SiteDescription/SiteDescription'
 // import LoadingSpinner from '../LoadingSpinner';
+// import HomePageCarousel from './HomePageCarousel';
 
 
 class HomePage extends Component {
@@ -21,13 +21,6 @@ class HomePage extends Component {
   }
 
   render() {
-    // if (this.state.loading) {
-    //   return (
-    //     <div className="HomePage">
-    //       <LoadingSpinner />
-    //     </div>
-    //   )
-    // }
 
     return (
     <main>
