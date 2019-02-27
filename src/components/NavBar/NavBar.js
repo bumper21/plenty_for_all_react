@@ -8,8 +8,8 @@ const NavBar = props => {
   
   return (
     <>
-      <Container className="navBarContainer pl-5 pr-5">
-        <Navbar collapseOnSelect expand="lg" bg="white" className="d-flex pt-4 pb-4">
+      <Container className="navBarContainer">
+        <Navbar collapseOnSelect expand="lg" bg="white" >
           <Navbar.Brand href="#HomePage">
             <Image
               src="/images/plums.jpg"
@@ -21,7 +21,7 @@ const NavBar = props => {
             {' Plenty For All'}
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-center">
+          <Navbar.Collapse id="responsive-navbar-nav">
             <Nav>
               <Nav.Link className="text-dark" href="">Blog</Nav.Link>
               <Nav.Link className="text-dark" href="">Events</Nav.Link>

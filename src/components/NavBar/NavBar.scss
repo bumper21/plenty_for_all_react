@@ -1,3 +1,17 @@
+.navBarContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 25vh;
+}
+
+.navBarContainer .navbar-brand {
+  display: flex;
+  align-items: center;
+  padding-right: 3vw;
+
+}
+
 #responsive-navbar-nav .navbar-nav a {
   padding-right: 50px;
 }

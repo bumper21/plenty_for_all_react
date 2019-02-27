@@ -8,7 +8,7 @@ class HomePageJumbotron extends Component {
       <Jumbotron fluid>
         <Container>
           <h1>Where everything thrives</h1>
-          <p>because WE are there</p>
+          <p>because we are there</p>
         </Container>
       </Jumbotron>
     );
