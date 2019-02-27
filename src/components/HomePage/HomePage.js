@@ -1,20 +1,20 @@
-import React from 'react';
-// import {Image} from 'react-bootstrap';
+import React, { Component } from 'react';
+
 import HomePageCarousel from './HomePageCarousel';
 import './HomePage.scss';
 
 
-const HomePage = props => {
-  const {} = props;
+class HomePage extends Component {
+  render() {
+    return (
+    <main>
+      <div className="HomePage">
+        <HomePageCarousel />
+      </div>
 
-  return (
-  <main>
-    <div className="HomePage">
-      <HomePageCarousel />
-    </div>
-
-  </main>
-  );
+    </main>
+    );
+  };
 };
 
 export default HomePage;

@@ -7,7 +7,10 @@
 // }
 
 .HomePage {
-  background-size: 100vh 100vw;
-  background-color: black;
   height: 100vh;
+  background-image: url( ../../images/abstract-attractive-backdrop.jpg);
+}
+
+#homePageCarousel {
+  padding-top: 8vh;
 }

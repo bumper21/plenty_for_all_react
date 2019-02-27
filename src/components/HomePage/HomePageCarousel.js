@@ -28,6 +28,7 @@ class HomePageCarousel extends Component {
         activeIndex={index}
         direction={direction}
         onSelect={this.handleSelect}
+        id="homePageCarousel"
       >
         <Carousel.Item>
           <img
