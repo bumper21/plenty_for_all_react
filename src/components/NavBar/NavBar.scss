@@ -1,5 +1,11 @@
 
 .navbar {
-  min-height: 80px;
+  min-height: 85px;
   font-family: 'Raleway', sans-serif;
+  margin: 0 2vw 0 2vw;
+}
+
+.navbar-brand {
+  display: flex !important;
+  align-items: center;
 }
