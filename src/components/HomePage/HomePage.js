@@ -4,6 +4,7 @@ import HomePageJumbotron from './Jumbotron/Jumbotron'
 import HomePageSiteDescription from './SiteDescription/SiteDescription'
 import HomePageCards from './CardDeck/HomePageCards'
 import HorizontalLine from '../HorizontalLine';
+import Footer from './Footer';
 
 
 class HomePage extends Component {
@@ -30,6 +31,7 @@ class HomePage extends Component {
         <HomePageSiteDescription />
         <HorizontalLine />
         <HomePageCards />
+        <Footer />
       </div>
 
     </main>
