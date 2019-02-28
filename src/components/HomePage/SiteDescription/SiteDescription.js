@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Image, Container } from 'react-bootstrap';
 
 import Checkmark from '../../../images/tick.svg'
-import HomePage from '../HomePage';
 import './SiteDescription.scss'
 
 class HomePageSiteDescription extends Component {
@@ -28,7 +27,7 @@ class HomePageSiteDescription extends Component {
           </li>
           <li>
             <Image src={Checkmark} alt="" />
-            Something this site offete os
+            Something this siteSomething this site offers. Something this site offers.
           </li>
         </ul>
       </Container>

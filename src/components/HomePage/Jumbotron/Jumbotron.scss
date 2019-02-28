@@ -12,14 +12,16 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  text-align: center;
 }
 
 .jumbotron h1 {
   font-weight: bold;
+  font-size: 45px;
   
 }
 
 .jumbotron p {
   color: white;
-  font-size: 22px
+  font-size: 30px;
 }

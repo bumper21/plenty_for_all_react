@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
+import './App.scss';
 import HomePage from './HomePage/HomePage';
 import NavBar from './NavBar/NavBar';
 import LoadingSpinner from './LoadingSpinner';
