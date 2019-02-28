@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Image, Container } from 'react-bootstrap';
 
 import Checkmark from '../../../images/tick.svg'
-import HomePage from '../HomePage';
 import './SiteDescription.scss'
 
 class HomePageSiteDescription extends Component {
