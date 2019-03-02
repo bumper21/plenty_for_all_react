@@ -11,7 +11,7 @@ class HomePageCardDeck extends Component {
   
   render() {
     return (
-      <Container className="mt-7 mb-7 card-container">
+      <Container className="mt-7 mb-7">
         <CardDeck>
           <Card>
             <Card.Img variant="top" src={BarrelGarden} />
