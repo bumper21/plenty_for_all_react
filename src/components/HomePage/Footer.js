@@ -8,52 +8,69 @@ class Footer extends Component {
   render() {
     
     return (
-      <div className="footer footer__list footer--dark ">
-        <Container className="footer__container">
-          <Row>
-            <Col className="footer__menu col-md-3">
-              <h3>Overview</h3>
-              <ul>
-                <li>
-                  Something
+      <div className="footer-primary footer--dark ">
+        <Container className="footer-primary__container">
+          <Row className="footer-primary__row">
+            <Col className="footer-primary__col col-md-3">
+              <h3 className="footer-primary__h3">Overview</h3>
+              <ul className="footer-primary__list">
+                <li className="footer-primary__item">
+                 <a href="" className="footer-primary__link">
+                  Features
+                 </a>
                 </li>
-                <li>
-                  Something
+                <li className="footer-primary__item">
+                 <a href="" className="footer-primary__link">
+                  Services
+                 </a>
                 </li>
-                <li>
-                  Something
-                </li>
-              </ul>
-            </Col>
-            <Col className="footer__menu col-md-3">
-              <h3>Menu</h3>
-              <ul>
-                <li>
-                  Something
-                </li>
-                <li>
-                  Something
-                </li>
-                <li>
-                  Something
+                <li className="footer-primary__item">
+                 <a href="" className="footer-primary__link">
+                  Blog
+                 </a>
                 </li>
               </ul>
             </Col>
-            <Col className="footer__menu col-md-3">
-              <h3>More</h3>
-              <ul>
-                <li>
-                  Something
+            <Col className="footer-primary__col col-md-3">
+              <h3 className="footer-primary__h3">Menu</h3>
+              <ul className="footer-primary__list">
+                <li className="footer-primary__item">
+                 <a href="" className="footer-primary__link">
+                  Features
+                 </a>
                 </li>
-                <li>
-                  Something
+                <li className="footer-primary__item">
+                 <a href="" className="footer-primary__link">
+                  Services
+                 </a>
                 </li>
-                <li>
-                  Something
+                <li className="footer-primary__item">
+                 <a href="" className="footer-primary__link">
+                  Blog
+                 </a>
                 </li>
               </ul>
             </Col>
-
+            <Col className="footer-primary__col col-md-3">
+              <h3 className="footer-primary__h3">More</h3>
+              <ul className="footer-primary__list">
+                <li className="footer-primary__item">
+                 <a href="" className="footer-primary__link">
+                  Features
+                 </a>
+                </li>
+                <li className="footer-primary__item">
+                 <a href="" className="footer-primary__link">
+                  Services
+                 </a>
+                </li>
+                <li className="footer-primary__item">
+                 <a href="" className="footer-primary__link">
+                  Blog
+                 </a>
+                </li>
+              </ul>
+            </Col>
           </Row>
         </Container>
       </div>
