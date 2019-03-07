@@ -1,5 +1,4 @@
-.jumbotron {
-  background-image: url(../../../images/seedlings.jpg);
+.jumbotron--primary {
   background-size: cover;
   min-height: 70vh;
   font-family: 'Raleway', sans-serif;
@@ -7,7 +6,12 @@
   display: flex;
 }
 
-.jumbotron .container {
+
+  .jumbotron--img {
+    background-image: url(../../../images/seedlings.jpg);
+  }
+
+.jumbotron--primary .jumbotron__container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,13 +19,13 @@
   text-align: center;
 }
 
-.jumbotron h1 {
+.jumbotron--primary .jumbotron__heading {
   font-weight: bold;
   font-size: 45px;
   
 }
 
-.jumbotron p {
+.jumbotron--primary .jumbotron__caption {
   color: white;
   font-size: 30px;
 }
