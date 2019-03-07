@@ -5,10 +5,10 @@ import './Jumbotron.scss'
 class HomePageJumbotron extends Component {
   render() {
     return (
-      <Jumbotron fluid>
-        <Container>
-          <h1>Where everything thrives</h1>
-          <p>because we are there</p>
+      <Jumbotron className="jumbotron--primary jumbotron--img" fluid>
+        <Container className="jumbotron__container">
+          <h1 className="jumbotron__heading">Where everything thrives</h1>
+          <p className="jumbotron__caption">because we are there</p>
         </Container>
       </Jumbotron>
     );
