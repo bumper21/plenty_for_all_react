@@ -5,14 +5,12 @@
   align-items: top;
   flex-direction: column;
   text-align: center;
-  margin-left: 10vw;
-  margin-right: 10vw;
-  margin-bottom: 15vh;
+  margin: 5vh 10vw 5vh 10vw;
   font-family: 'Raleway', sans-serif;
 }
 @media all and (min-width: 980px) {
   .checklist {
-    margin: 0 25vw 10vh 25vw;
+    margin: 0 25vw 5vh 25vw;
   }
 }
 
