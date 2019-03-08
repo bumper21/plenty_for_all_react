@@ -5,6 +5,7 @@ import HomePageSiteDescription from './SiteDescription/SiteDescription'
 import HomePageCards from './CardDeck/HomePageCards'
 import HorizontalLine from '../HorizontalLine';
 import Footer from './Footer';
+import HomePagePartners from './Partners/PartnersSection'
 
 
 class HomePage extends Component {
@@ -27,10 +28,10 @@ class HomePage extends Component {
     <main>
       <div className="HomePage">
         <HomePageJumbotron />
-        {/* <HomePageCarousel /> */}
         <HomePageSiteDescription />
         <HorizontalLine />
         <HomePageCards />
+        <HomePagePartners />
         <Footer />
       </div>
 
