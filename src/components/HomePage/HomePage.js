@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './HomePage.scss';
 import HomePageJumbotron from './Jumbotron/Jumbotron'
-import HomePageSiteDescription from './SiteDescription/SiteDescription'
+import CheckList from './CheckList/CheckList'
 import HomePageCards from './CardDeck/HomePageCards'
 import HorizontalLine from '../HorizontalLine';
 import Footer from './Footer';
@@ -28,7 +28,7 @@ class HomePage extends Component {
     <main>
       <div className="HomePage">
         <HomePageJumbotron />
-        <HomePageSiteDescription />
+        <CheckList />
         <HorizontalLine />
         <HomePageCards />
         <HomePagePartners />

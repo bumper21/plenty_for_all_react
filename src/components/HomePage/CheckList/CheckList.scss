@@ -1,5 +1,5 @@
 
-.HomePageDescriptionContainer {
+.checklist {
   display: flex;
   justify-content: center;
   align-items: top;
@@ -11,31 +11,31 @@
   font-family: 'Raleway', sans-serif;
 }
 @media all and (min-width: 980px) {
-  .HomePageDescriptionContainer {
+  .checklist {
     margin: 0 25vw 10vh 25vw;
   }
 }
 
-.HomePageDescriptionContainer h1 {
+.checklist__header {
   margin-top: 3vh;
   margin-bottom: 3vh;
   font-size: 40px;
 }
 
-.HomePageDescriptionContainer #headerDescription {
+.checklist__sub-header{
   color: grey;
   font-size: 18px;
   opacity: 0.8;
   margin: 0vh 5vw 5vh 5vw;
 }
 
-.HomePageDescriptionContainer ul {
+.checklist__list {
   justify-content: left;
   text-align: left;
   font-size: 22px;
   padding-left: 0;
 }
-.HomePageDescriptionContainer li {
+.checklist__item {
   display:inline-flex;
   list-style: none;
   align-items: center;
@@ -45,7 +45,7 @@
   margin-bottom: 5vh;
 }
 
-.HomePageDescriptionContainer img {
+.checklist--checkmark-img {
   width: 30px;
   height: 30px;
   margin-right: 15px;
