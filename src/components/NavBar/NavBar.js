@@ -8,13 +8,14 @@ const NavBar = props => {
 
   return (
       <Navbar collapseOnSelect expand="lg" bg="white" variant="light">
-        <Navbar.Brand>
+        <Navbar.Brand href="/">
           <Image
             src={LeafSky}
             width="40"
             height="40"
             className="rounded-circle"
             alt=""
+            
           />
           Plenty for All
         </Navbar.Brand>
@@ -38,6 +39,9 @@ const NavBar = props => {
             <Nav.Link href="#more-resources">More resources</Nav.Link>
             <Nav.Link href="#extras">
               Extras
+            </Nav.Link>
+            <Nav.Link href="">
+              Sign-In
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
