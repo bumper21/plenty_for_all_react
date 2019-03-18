@@ -1,9 +1,9 @@
 const BASE_URL = `http://localhost:3030/api/`;
 
 
-export const Se0ssion = {
+export const Session = {
   create(params) {
-    return fetch(`${BASE_URL}/sign_in` {
+    return fetch(`${BASE_URL}/sign_in`, {
       method: "POST",
       credentials: "include",
       headers: {
@@ -14,7 +14,7 @@ export const Se0ssion = {
   },
 
   destroy() {
-    return fetch(`${BASE_URL}/sign_out` {
+    return fetch(`${BASE_URL}/sign_out`, {
       method: "DELETE",
       credentials: "include"
     }).then(res => res.json())
