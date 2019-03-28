@@ -15,17 +15,17 @@ class Footer extends Component {
               <h3 className="footer-primary__h3">Overview</h3>
               <ul className="footer-primary__list">
                 <li className="footer-primary__item">
-                 <a href="" className="footer-primary__link">
+                 <a href="home" className="footer-primary__link">
                   Features
                  </a>
                 </li>
                 <li className="footer-primary__item">
-                 <a href="" className="footer-primary__link">
+                 <a href="home" className="footer-primary__link">
                   Services
                  </a>
                 </li>
                 <li className="footer-primary__item">
-                 <a href="" className="footer-primary__link">
+                 <a href="home" className="footer-primary__link">
                   Blog
                  </a>
                 </li>
@@ -35,17 +35,17 @@ class Footer extends Component {
               <h3 className="footer-primary__h3">Menu</h3>
               <ul className="footer-primary__list">
                 <li className="footer-primary__item">
-                 <a href="" className="footer-primary__link">
+                 <a href="home" className="footer-primary__link">
                   Features
                  </a>
                 </li>
                 <li className="footer-primary__item">
-                 <a href="" className="footer-primary__link">
+                 <a href="home" className="footer-primary__link">
                   Services
                  </a>
                 </li>
                 <li className="footer-primary__item">
-                 <a href="" className="footer-primary__link">
+                 <a href="home" className="footer-primary__link">
                   Blog
                  </a>
                 </li>
@@ -55,17 +55,17 @@ class Footer extends Component {
               <h3 className="footer-primary__h3">More</h3>
               <ul className="footer-primary__list">
                 <li className="footer-primary__item">
-                 <a href="" className="footer-primary__link">
+                 <a href="home" className="footer-primary__link">
                   Features
                  </a>
                 </li>
                 <li className="footer-primary__item">
-                 <a href="" className="footer-primary__link">
+                 <a href="home" className="footer-primary__link">
                   Services
                  </a>
                 </li>
                 <li className="footer-primary__item">
-                 <a href="" className="footer-primary__link">
+                 <a href="home" className="footer-primary__link">
                   Blog
                  </a>
                 </li>
