@@ -8,7 +8,7 @@ const fromFormData = formData => {
   for (let [name, value] of formData) {
     newObj[name] = value;
   }
-
+  console.log(newObj)
   return newObj;
 };
 

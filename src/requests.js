@@ -1,9 +1,9 @@
-const BASE_URL = `http://localhost:3030/api/`;
+const BASE_URL = `http://localhost:3030/api/v1/`;
 
 
 export const Session = {
   create(params) {
-    return fetch(`${BASE_URL}/sign_in`, {
+    return fetch(`${BASE_URL}sign_in`, {
       method: "POST",
       credentials: "include",
       headers: {
@@ -14,7 +14,7 @@ export const Session = {
   },
 
   destroy() {
-    return fetch(`${BASE_URL}/sign_out`, {
+    return fetch(`${BASE_URL}sign_out`, {
       method: "DELETE",
       credentials: "include"
     }).then(res => res.json())
@@ -23,7 +23,7 @@ export const Session = {
 
 export const User = {
   current() {
-    return fetch(`${BASE_URL}/users/current`, {
+    return fetch(`${BASE_URL}current_user`, {
       credentials: "include"
     }).then(res => res.json())
   }
