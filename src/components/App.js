@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+// import axios from 'axios';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import './App.scss';
@@ -15,7 +16,8 @@ class App extends Component {
 
     this.state = {
       loading: true,
-      currentUser: null
+      currentUser: null,
+      errors: ''
     }
 
     this.getUser = this.getUser.bind(this);
@@ -29,13 +31,14 @@ class App extends Component {
     }));
   }
 
-  getUser() {
-    User.current().then(currentUser => {
-      if(currentUser.id) {
-        this.setState({ currentUser })
-      }
-    })
-  }
+  async getUser() {
+    try {
+      const currentUser = await User.current();
+      this.setState({ currentUser });
+    } catch (err) {
+      throw err;
+    };
+  };
 
   componentDidMount() {
     this.getUser()
