@@ -15,7 +15,7 @@ export const User = {
 
 export const Session = {
   create(params) {
-    return fetch(`${BASE_URL}sign_in`, {
+    return fetch(`${BASE_URL}users/login`, {
       method: "POST",
       credentials: "include",
       headers: {

@@ -16,8 +16,7 @@ class App extends Component {
 
     this.state = {
       loading: true,
-      currentUser: null,
-      errors: ''
+      currentUser: null
     }
 
     this.getUser = this.getUser.bind(this);
