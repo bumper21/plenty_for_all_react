@@ -14,29 +14,17 @@ export const User = {
 }
 
 export const Session = {
-  create(params) {
-    return fetch(`${BASE_URL}users/login`, {
-      method: "POST",
-      credentials: "include",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(params)
-    }).then(res => res.json());
-  },
-
-  destroy() {
-    return fetch(`${BASE_URL}sign_out`, {
-      method: "DELETE",
-      credentials: "include"
-    }).then(res => res.json())
+  login(params) {
+    axios.post(`${BASE_URL}users/login`, {
+      user: {
+      email: params.user.email,
+      password: params.user.password
+      }
+    })
+    .then((response) => {
+      return response
+    }).catch((error) => {
+      console.log(error)
+    });
   }
-};
-
-// export const User = {
-//   current() {
-//     return fetch(`${BASE_URL}current_user`, {
-//       credentials: "include"
-//     }).then(res => res.json())
-//   }
-// }
+}

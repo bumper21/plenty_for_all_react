@@ -19,7 +19,7 @@ class App extends Component {
       currentUser: null
     }
 
-    this.getUser = this.getUser.bind(this);
+    // this.getUser = this.getUser.bind(this);
     this.destroySession = this.destroySession.bind(this);
 
   }
@@ -30,17 +30,17 @@ class App extends Component {
     }));
   }
 
-  async getUser() {
-    try {
-      const currentUser = await User.current();
-      this.setState({ currentUser });
-    } catch (err) {
-      throw err;
-    };
-  };
+  // async getUser() {
+  //   try {
+  //     const currentUser = await User.current();
+  //     this.setState({ currentUser });
+  //   } catch (err) {
+  //     throw err;
+  //   };
+  // };
 
   componentDidMount() {
-    this.getUser()
+    // this.getUser()
     setTimeout(function() {
       this.setState({loading: false})
     }.bind(this), 1000)

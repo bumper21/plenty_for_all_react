@@ -9,8 +9,9 @@ export default class LoginPage extends Component {
 
     this.state = {
       errors: '',
-      credentials: {
-        email: '', password: ''
+      user: {
+        email: '',
+        password: ''
       }
     }
     this.handleChange = this.handleChange.bind(this)
@@ -19,13 +20,14 @@ export default class LoginPage extends Component {
 
   handleChange(event) {
     const field = event.target.name;
-    const credentials = this.state.credentials;
-    credentials[field] = event.target.value;
-    return this.setState({credentials: credentials});
+    const user = this.state.user;
+    user[field] = event.target.value;
+    return this.setState({user: user});
   }
 
   login() {
-    Session.create().then(res => console.log(res))
+    // event.preventDefault();
+    Session.login(this.state).then(res => console.log(res))
   }
 
   render() {
@@ -42,7 +44,7 @@ export default class LoginPage extends Component {
           ) : null}
           <Form.Group controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>
-            <Form.Control name="email" type="email" placeholder="Enter email" onChange={this.handleChange} value={this.state.credentials.email} />
+            <Form.Control name="email" type="email" placeholder="Enter email" onChange={this.handleChange} value={this.state.user.email} />
             <Form.Text className="text-muted">
               We'll never share your email with anyone else.
             </Form.Text>
@@ -50,7 +52,7 @@ export default class LoginPage extends Component {
 
           <Form.Group controlId="formBasicPassword">
             <Form.Label>Password</Form.Label>
-            <Form.Control type="password" placeholder="Password" onChange={this.handleChange} name="password" value={this.state.credentials.password} />
+            <Form.Control type="password" placeholder="Password" onChange={this.handleChange} name="password" value={this.state.user.password} />
           </Form.Group>
           <Button variant="primary" type="submit">
             Login
