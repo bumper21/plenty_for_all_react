@@ -30,17 +30,16 @@ class App extends Component {
     }));
   }
 
-  // async getUser() {
-  //   try {
-  //     const currentUser = await User.current();
-  //     this.setState({ currentUser });
-  //   } catch (err) {
-  //     throw err;
-  //   };
-  // };
+  async getUser() {
+    try {
+      const currentUser = await User.current();
+      this.setState({ currentUser });
+    } catch (err) {
+      throw err;
+    };
+  };
 
   componentDidMount() {
-    // this.getUser()
     setTimeout(function() {
       this.setState({loading: false})
     }.bind(this), 1000)

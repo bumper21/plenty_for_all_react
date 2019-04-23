@@ -12,7 +12,8 @@ export default class LoginPage extends Component {
       user: {
         email: '',
         password: ''
-      }
+      },
+      authentication: ''
     }
     this.handleChange = this.handleChange.bind(this)
     this.login = this.login.bind(this)
@@ -25,10 +26,24 @@ export default class LoginPage extends Component {
     return this.setState({user: user});
   }
 
-  login() {
-    // event.preventDefault();
-    Session.login(this.state).then(res => console.log(res))
-  }
+  async login() {
+    try {
+      const authentication = await Session.login(this.state);
+      this.setState({ authentication });
+      console.log(authentication)
+      // Session.login(this.state).then(res => console.log(res))
+    } catch (err) {
+      throw err;
+    };
+  };
+  // async getUser() {
+  //   try {
+  //     const currentUser = await User.current();
+  //     this.setState({ currentUser });
+  //   } catch (err) {
+  //     throw err;
+  //   };
+  // };
 
   render() {
     const { errors } = this.state;
