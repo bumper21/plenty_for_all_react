@@ -32,6 +32,7 @@ export default class LoginPage extends Component {
       this.setState({ authentication });
       console.log(authentication)
       // Session.login(this.state).then(res => console.log(res))
+      //RESTART WORK HERE - PROJECT NOW ON HOLD
     } catch (err) {
       throw err;
     };
