@@ -40,7 +40,7 @@ const NavBar = props => {
             <Nav.Link href="#extras">
               Extras
             </Nav.Link>
-            <Nav.Link href="">
+            <Nav.Link href="/session/new">
               Sign-In
             </Nav.Link>
           </Nav>

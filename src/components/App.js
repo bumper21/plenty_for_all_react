@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
+// import axios from 'axios';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import './App.scss';
 import HomePage from './HomePage/HomePage';
 import NavBar from './NavBar/NavBar';
+import SignInPage from './SignInPage/Index';
 import LoadingSpinner from './LoadingSpinner';
 
-import { User, Session } from '../requests';
+import { User, Session } from "../requests";
 
 class App extends Component {
   constructor(props) {
@@ -17,23 +19,25 @@ class App extends Component {
       currentUser: null
     }
 
-    this.getUser = this.getUser.bind(this);
+    // this.getUser = this.getUser.bind(this);
     this.destroySession = this.destroySession.bind(this);
 
   }
 
-  getUser() {
-    User.current().then(currentUser => {
-      if (currentUser.id) {
-        this.setState({ currentUser });
-      }
-    })
-  };
-
   destroySession() {
     Session.destroy().then(() => this.setState({
-      currentUser: null }));
+      currentUser: null
+    }));
   }
+
+  async getUser() {
+    try {
+      const currentUser = await User.current();
+      this.setState({ currentUser });
+    } catch (err) {
+      throw err;
+    };
+  };
 
   componentDidMount() {
     setTimeout(function() {
@@ -64,11 +68,13 @@ class App extends Component {
               exact
               component={HomePage}
             />
-            {/* <Route
-              path="/user/sign-in"
+            <Route
+              path="/session/new"
               exact
-              component={}
-            /> */}
+              render={routeProps => (
+                <SignInPage {...routeProps} onSignIn={this.getUser} />
+              )}
+            />
           </Switch>
         </div>
       </BrowserRouter>
