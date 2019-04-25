@@ -43,10 +43,11 @@ class App extends Component {
     setTimeout(function() {
       this.setState({loading: false})
     }.bind(this), 1000)
-   
-  }
+    this.getUser()
+  };
 
   render() {
+    const { currentUser } = this.state;
 
     if (this.state.loading) {
       return (
@@ -59,7 +60,8 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className="App">
-          <NavBar />
+          <NavBar
+            currentUser={currentUser} onSignOut={this.destroySession} />
           <Switch>
             <Route
               path="/"
